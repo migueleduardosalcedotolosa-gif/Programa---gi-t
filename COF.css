@@ -1,0 +1,263 @@
+
+.container{
+    margin-top: 100px;
+}
+
+
+/* ===== Acordeón COF (solo azul, blanco y amarillo) ===== */
+.T1 .accordion {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(13, 71, 161, 0.15); /* azul translúcido para panel */
+  border: 2px solid #ffcc00;           /* marco amarillo sutil */
+  border-radius: 16px;
+  padding: 6px;
+}
+
+/* Cada item con separación y bordes suaves */
+.T1 .accordion-item {
+  background: transparent;
+  border: 1px solid #1976d2;  /* azul medio */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Botón del encabezado */
+.T1 .accordion-button {
+  background-color: #0d47a1;  /* azul profundo */
+  color: #ffffff;             /* texto blanco */
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 14px 18px;
+  border: 0;
+}
+
+/* Botón cuando está colapsado (estado por defecto en flush) */
+.T1 .accordion-button.collapsed {
+  background-color: #1976d2;  /* azul intermedio */
+  color: #ffffff;
+}
+
+/* Hover y foco: ligero énfasis y anillo amarillo */
+.T1 .accordion-button:not(.collapsed):hover,
+.T1 .accordion-button:hover {
+  filter: brightness(1.06);
+}
+
+.T1 .accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.6); /* anillo amarillo */
+  border: 0;
+}
+
+/* Cuerpo del acordeón */
+.T1 .accordion-body {
+  background: #0d47a1;          /* azul profundo para contraste */
+  color: #ffffff;               /* texto blanco */
+  padding: 16px 18px;
+  border-top: 2px solid #ffcc00; /* separación amarilla */
+  line-height: 1.6;
+}
+
+/* Quitar borde blanco/por defecto del flush */
+.T1 .accordion-flush .accordion-item .accordion-button {
+  border-radius: 8px;
+}
+
+/* Chevron (flecha) amarilla en el botón */
+.T1 .accordion-button::after {
+  /* Reemplazamos el icono por un SVG amarillo */
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffcc00'>\
+<path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/>\
+</svg>");
+  transform: rotate(-90deg); /* apuntando a la derecha cuando está colapsado */
+}
+
+/* Al expandir, que apunte hacia abajo */
+.T1 .accordion-button:not(.collapsed)::after {
+  transform: rotate(0deg);
+}
+
+/* Tipografía un pelín más grande para títulos */
+.T1 .accordion-button {
+  font-size: 1.05rem;
+}
+
+.container.T2{
+    width: 40%;
+    
+}
+.btn-secondary{
+    width: 40%;
+}
+.btn-outline-danger{
+    width: 40%;
+}
+.T3 button {
+  margin-bottom: 20px; 
+}
+.profesional-btn, 
+.aficionado-btn {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Botón profesional: Azul */
+.profesional-btn {
+  background-color: #0056b3; /* Azul */
+  color: white;
+}
+.profesional-btn:active {
+  transform: scale(0.93);
+  
+}
+.profesional-btn:hover {
+  
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+/* Botón aficionado: Amarillo */
+.aficionado-btn {
+  background-color: #ffcc00; /* Amarillo */
+  color: #002147; /* Azul oscuro para contraste */
+}
+
+.aficionado-btn:hover {
+  background-color: #e6b800; /* Amarillo más oscuro */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+/* Contenedor: centrar y espaciado */
+.container.T3 {
+  margin-top: 20px;
+}
+
+.justify-content-center{
+    margin-top: 6%;
+}
+.sub1 {
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 350px;
+  margin-right: 350px;
+  padding-bottom: 7px;
+  border: 2px solid #ffcc00;
+  background-color: #1976d2;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+  
+  
+  
+}
+.caja_menu {
+  border: 2px solid #ffcc00;
+  width: 640px;
+  height: 200px;
+  position: relative;
+  left: 350px;
+  background-color: rgba(13, 71, 161, 0.15);
+  margin-top: 40px;
+  border-radius: 20px;
+
+}
+.sub_caja1 {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.05rem;
+  color: #ffffff;
+  background-color: #1976d2;
+  width: 100px;
+  position: relative;
+  left: 270px;
+  border-radius: 4px;
+  border: 1px solid #ffcc00;
+}
+.boton_sub1 {
+  background-color:#ffcc00 ;
+  height: 44px;
+  width: 150px;
+  left: 45px;
+  position: relative;
+  margin: 62px;
+  margin-top: 80px;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.boton_sub1:hover {
+  
+}
+.boton_sub1:active {
+  transform: scale(0.95);
+
+}
+.boton_sub2 {
+  background-color:#ffcc00 ;
+  height: 44px;
+  width: 150px;
+  left: 45px;
+  position: relative;
+  margin: 62px;
+  margin-top: 80px;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  color: #ffffff;
+  font-weight: 700;
+}
+.boton_sub2:hover {
+  
+}
+.boton_sub2:active {
+  transform: scale(0.95);
+
+}
+
+.titulo_amarillo {
+  background-color: rgba(252, 255, 56, 0.925);
+  padding: 10px;
+}
+.B0 {
+  color: #ffffff;
+  text-align: center;
+}
+.B1 {
+  left: 370px;
+  position: relative;
+  width: 200px;
+  border-radius: 9px;
+  background-color:#5d9bda;
+  border: solid #5d9bda;
+  font-weight: 700;
+  color: #ffffff;
+}
+.B1:hover{
+  transform: scale(0.98);
+
+}
+.B1:active{
+  background-color: rgba(252, 255, 56, 0.925);
+}
+
+2.5rem
+text-align: center
+padding: 20px;
+white; background-color:
+
