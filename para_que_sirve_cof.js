@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (origen === "registro") {
         window.location.href = "COF.html";
       } else {
-        window.location.href = "cuerpo_tecnico.html";
+        window.location.href = "index.html";
       }
     });
   }

@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (tipoUsuario === "profesional") {
       if (["a", "b", "c"].includes(inicial)) {
         alert("Registro exitoso. Serás redirigido al inicio de sesión.");
-        window.location.href = "cuerpo_tecnico.html"; 
+        window.location.href = "index.html"; 
       } else {
         alert("Tu información no es correcta.");
         inputNombre.value = "";
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       alert("Registro exitoso como aficionado. Serás redirigido al inicio de sesión.");
-      window.location.href = "cuerpo_tecnico.html"; 
+      window.location.href = "index.html"; 
     }
   });
   const botonesRegistro = document.querySelectorAll(".B1");
