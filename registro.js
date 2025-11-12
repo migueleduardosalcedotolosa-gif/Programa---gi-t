@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputCorreo = document.querySelector('input[placeholder="correo"]');
   const inputPassword = document.getElementById("password");
 
-  // Guardar el tipo de usuario seleccionado
   btnProfesional.addEventListener("click", function () {
     tipoUsuario = "profesional";
     alert("Has seleccionado: Profesional");
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Has seleccionado: Aficionado");
   });
 
-  // Validar y registrar
   btnRegistrarse.addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -46,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Guardar en localStorage
     const usuario = {
       nombre: nombreCompleto,
       correo: correo,
@@ -57,6 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("usuario", JSON.stringify(usuario));
 
     alert("Registro exitoso. Serás redirigido al inicio de sesión.");
-     window.location.href = "login.html"; // Descomenta si tienes una página de login
+     window.location.href = "login.html"; 
   });
 });

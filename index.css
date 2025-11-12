@@ -15,30 +15,28 @@ body {
 }
 
 .text-center.my-4 {
-  color: white; /* Cambia el color del texto */
+  color: white; 
 }
 
-/* === Botón COF en columna con letras acostadas === */
 #btnLogin {
-  width: 56px;                 /* angosto (ajusta a gusto) */
-  height: 150px;               /* alto (ajusta a gusto) */
+  width: 56px;                 
+  height: 150px;               
   display: flex;
-  flex-direction: column;      /* NO usar column-reverse */
+  flex-direction: column;      
   align-items: center;
   justify-content: center;
-  gap: 2px;                    /* separación entre letras */
+  gap: 2px;                    
   padding: 6px;
-  font-size: 0;                /* neutraliza los &nbsp; del HTML */
-  align-self: start;           /* evita que el grid lo estire de más */
+  font-size: 0;                
+  align-self: start;           
 }
 
-/* Cada letra girada y en orden correcto */
 #btnLogin span {
   display: block;
-  transform: rotate(-90deg);   /* usa 90deg si las quieres apuntando al otro lado */
+  transform: rotate(-90deg);   
   line-height: 1;
-  font-size: 8px;             /* restaura tamaño del texto */
-  letter-spacing: 1px;         /* opcional */
+  font-size: 8px;             
+  letter-spacing: 1px;         
 }
 .titulo_amarillo {
   background-color: rgba(252, 255, 56, 0.925);
@@ -63,5 +61,27 @@ body {
 
 }
 .B1:active{
-  background-color: rgba(252, 255, 56, 0.925);
+  background-color: gold;
+}
+.R1{
+  top: 364px;
+  position: absolute;
+  left: 480px;
+  width: 295px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: gold;
+  color: gold;
+  border: 1px solid;
+  font-size: larger;
+  font-weight: 400;
+
+  
+}
+.R1:hover{
+  background-color: gold;
+  color: black;
+  border-color: gold;
+
 }
